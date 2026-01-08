@@ -6,7 +6,7 @@ The purpose of this software is to serve as the foundation for a tool that analy
 
 Through this project, I aim to strengthen my understanding of JavaScript fundamentals, project organization, and professional software development workflows using Git and GitHub.
 
-[Software Demo Video](https://youtube.link.goes.here)
+[Software Demo Video](https://youtu.be/ymnVzicaZOk)
 
 # Development Environment
 
