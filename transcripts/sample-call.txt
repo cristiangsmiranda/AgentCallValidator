@@ -1,0 +1,5 @@
+Agent: Hello, thank you for calling ..., my name is John.
+Customer: Hi, I need help with my account.
+Agent: Before we continue, this call may be recorded for quality purposes.
+Customer: Ok, Go ahead.
+Agent: Can you help me saying what is your name and email?

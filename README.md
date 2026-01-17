@@ -1,20 +1,50 @@
 # Overview
 
-AgentCallValidator is a JavaScript-based project designed to support my growth as a software engineer by exploring automation, text processing, and quality assurance concepts.
+AgentCallValidator is a JavaScript-based project developed as part of the CSE 310 – Applied Programming course. The purpose of this project is to demonstrate applied programming concepts through the simulation of an intelligent Quality Assurance (QA) compliance validation tool for customer service call center interactions.
 
-The purpose of this software is to serve as the foundation for a tool that analyzes customer service interactions and validates whether agents follow predefined compliance rules. While this initial version is a simple "Hello World" application, it establishes the project structure and development environment that will be expanded in future iterations.
+In its current version, the software processes pre-transcribed customer service calls stored in text files. The application reads the transcript, identifies the roles of the speakers (Agent and Customer), and analyzes only the agent’s speech to verify compliance with predefined company policies such as:
 
-Through this project, I aim to strengthen my understanding of JavaScript fundamentals, project organization, and professional software development workflows using Git and GitHub.
+Proper greeting
 
-[Software Demo Video](https://youtu.be/ymnVzicaZOk)
+Agent identification
+
+Mandatory disclosure
+
+The system generates a structured compliance report that clearly indicates whether each requirement was met and whether the interaction is overall COMPLIANT or NON-COMPLIANT.
+
+This project focuses on core JavaScript and Node.js concepts including file handling, string processing, ES6 array functions, recursion, modular design, external library usage, and robust error handling.
+
+* [Software Demo Video](https://youtu.be/)
+
+
+## How the Software Works
+
+1. The program reads a customer service call transcript from a .txt file.
+2. Each line of the transcript is parsed to identify the speaker (Agent or Customer).
+3. Only the Agent’s messages are extracted and analyzed.
+4. Compliance rules are validated using explicit mandatory keywords for each requirement.
+5. A recursive algorithm ensures that all required words appear in the correct logical order, preventing partial or incomplete disclosures from being incorrectly marked as compliant.
+6. A color-coded compliance report is displayed directly in the terminal using a third-party JavaScript library.
+
+
+## Key Programming Concepts Demonstrated
+
+1. File I/O using Node.js (fs)
+2. String processing and text parsing
+3. ES6 array functions (map, filter, every)
+4. Recursion to validate ordered compliance requirements
+5. Exception handling using throw and try/catch
+6. External library usage (chalk) for enhanced terminal output
+7. Modular and readable code structure with function-level documentation
 
 # Development Environment
 
 The software was developed using the following tools:
 
-- Visual Studio Code as the code editor
-- Git for version control
-- GitHub for source code hosting
+Visual Studio Code as the code editor
+Node.js for JavaScript execution
+Git for version control
+GitHub for source code hosting
 
 The programming language used in this project is **JavaScript**, executed in a Node.js environment.
 
@@ -33,3 +63,8 @@ The following resources were explored as part of early research for future expan
 * [Soniox Speech-to-Text Web SDK (npm)](https://www.npmjs.com/package/%40soniox/speech-to-text-web?activeTab=readme)
 * [Web Speech API (MDN)](https://developer.mozilla.org/en-US/docs/Web/API/Web_Speech_API)
 * [JavaScript Speech Recognition Tutorial (YouTube)](https://www.youtube.com/watch?v=3XxDQUX-dEM)
+
+
+## Final Note
+
+This project was intentionally designed to prioritize correctness, clarity, and strict validation logic, ensuring that compliance requirements are only marked as passed when all mandatory elements are fully satisfied.
